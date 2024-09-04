@@ -16,96 +16,117 @@
 <body>
     <div id="nav-wrapper">
         <nav>
-            <img id="logo" src="/images/converse-logo.png" alt="" width="75px">
-            <input id="searchbox" type="text" placeholder="Search for shoes and more...">
-            <a href=""><img src="/images/search-icon.png" alt="" width="30px"></a>
-            <img src="/images/profile-icon.png" alt="" width="56px">
+            <a id="logo-link" href=""><img id="logo" src="/images/converse-logo.png" alt="" width="75px"></a>
+            <div id="search-container">
+                <input id="searchbox" type="text" placeholder="Search for shoes and more...">
+                <a href=""><img src="/images/search-icon.png" alt="" width="30px"></a>
+            </div>
+            <div id="personal-icons">
+                <a href=""><img id="cart-icon" src="/images/shopping-cart-icon.png" alt=""></a>
+                <a href=""><img id="heart-icon" src="/images/heart-icon.png" alt=""></a>
+                <a href=""><img src="/images/profile-icon.png" alt="" width="56px"></a>
+            </div>
         </nav>
     </div>
 
     <div id="main-wrapper">
+        <p id="shoe-dir"><a href="">SHOES</a> > <a href="">CLASSICS</a> > <a href="">CLASSIC CHUCKS</a></p>
         <main>
-            <p id="shoe-dir"><a href="">SHOES</a> > <a href="">CLASSICS</a> > <a href="">CLASSIC CHUCKS</a></p>
 
             <div id="shoe-model">
                 <h1 id="modelname">CLASSIC CHUCKS!</h1>
                 <p id="colorway"><em>ANNOYING ORANGE/WONDROUS WHITE/GLOOMY GRAY</em></p>
             </div>
 
-            <div id="shoe-images">
-                <img src="/images/shoe0.jpg" alt="" width="275px">
-                <div id="image-previews">
-                    <img src="/images/shoe0.jpg" alt="" width="71px">
-                    <img src="/images/shoe90.jpg" alt="" width="71px">
-                    <img src="/images/shoe180.jpg" alt="" width="71px">
-                    <img src="/images/shoe270.jpg" alt="" width="71px">
+            <div id="shoe-images-container">
+                <div id="shoe-images">
+                    <div id="main-img-box">
+                        <img id="main-img" src="/images/shoe0.jpg" alt="" width="275px">
+                    </div>
+                    <div id="image-previews">
+                        <img src="/images/shoe0.jpg" alt="" onclick="enlargeImg(this)">
+                        <img src="/images/shoe90.jpg" alt="" onclick="enlargeImg(this)">
+                        <img src="/images/shoe180.jpg" alt="" onclick="enlargeImg(this)">
+                        <img src="/images/shoe270.jpg" alt="" onclick="enlargeImg(this)">
+                    </div>
                 </div>
             </div>
-            <div id="size-wrapper">
-                <div id="size-prompt">
-                    <p>Select a size:&nbsp;</p>
-                    <p id="size-num"></p>
-                </div>
-                <div id="sizes">
-                    <div class="size">
-                        <input type="radio" name="radio" id="seven">
-                        <label role="radio" class="radio" for="seven">7</label>
-                    </div>
 
-                    <div class="size">
-                        <input type="radio" name="radio" id="seven-half">
-                        <label role="radio" class="radio" for="seven-half">7.5</label>
+            <div id="model-size-price-container">
+
+                <div id="shoe-model-alt">
+                    <h1 id="modelname">CLASSIC CHUCKS!</h1>
+                    <p id="colorway"><em>ANNOYING ORANGE/WONDROUS WHITE/GLOOMY GRAY</em></p>
+                </div>
+
+                <div id="size-wrapper">
+                    <div id="size-prompt">
+                        <p>Select a size:&nbsp;</p>
+                        <p id="size-num"></p>
                     </div>
-                    <div class="size">
-                        <input type="radio" name="radio" id="eight">
-                        <label role="radio" class="radio" for="eight">8</label>
-                    </div>
-                    <div class="size">
-                        <input type="radio" name="radio" id="eight-half">
-                        <label role="radio" class="radio" for="eight-half">8.5</label>
-                    </div>
-                    <div class="size">
-                        <input type="radio" name="radio" id="nine">
-                        <label role="radio" class="radio" for="nine">9</label>
-                    </div>
-                    <div class="size">
-                        <input type="radio" name="radio" id="nine-half">
-                        <label role="radio" class="radio" for="nine-half">9.5</label>
-                    </div>
-                    <div class="size">
-                        <input type="radio" name="radio" id="ten">
-                        <label role="radio" class="radio" for="ten">10</label>
-                    </div>
-                    <div class="size">
-                        <input type="radio" name="radio" id="ten-half">
-                        <label role="radio" class="radio" for="ten-half">10.5</label>
-                    </div>
-                    <div class="size">
-                        <input type="radio" name="radio" id="eleven">
-                        <label role="radio" class="radio" for="eleven">11</label>
-                    </div>
-                    <div class="size">
-                        <input type="radio" name="radio" id="eleven-half">
-                        <label role="radio" class="radio" for="eleven-half">11.5</label>
-                    </div>
-                    <div class="size">
-                        <input type="radio" name="radio" id="twelve">
-                        <label role="radio" class="radio" for="twelve">12</label>
-                    </div>
-                    <div class="size">
-                        <input type="radio" name="radio" id="twelve-half">
-                        <label role="radio" class="radio" for="twelve-half">12.5</label>
-                    </div>
-                    <div class="size">
-                        <input type="radio" name="radio" id="thirteen">
-                        <label role="radio" class="radio" for="thirteen">13</label>
+                    <div id="sizes">
+                        <div class="size">
+                            <input type="radio" name="radio" id="seven">
+                            <label role="radio" class="radio" for="seven">7</label>
+                        </div>
+
+                        <div class="size">
+                            <input type="radio" name="radio" id="seven-half">
+                            <label role="radio" class="radio" for="seven-half">7.5</label>
+                        </div>
+                        <div class="size">
+                            <input type="radio" name="radio" id="eight">
+                            <label role="radio" class="radio" for="eight">8</label>
+                        </div>
+                        <div class="size">
+                            <input type="radio" name="radio" id="eight-half">
+                            <label role="radio" class="radio" for="eight-half">8.5</label>
+                        </div>
+                        <div class="size">
+                            <input type="radio" name="radio" id="nine">
+                            <label role="radio" class="radio" for="nine">9</label>
+                        </div>
+                        <div class="size">
+                            <input type="radio" name="radio" id="nine-half">
+                            <label role="radio" class="radio" for="nine-half">9.5</label>
+                        </div>
+                        <div class="size">
+                            <input type="radio" name="radio" id="ten">
+                            <label role="radio" class="radio" for="ten">10</label>
+                        </div>
+                        <div class="size">
+                            <input type="radio" name="radio" id="ten-half">
+                            <label role="radio" class="radio" for="ten-half">10.5</label>
+                        </div>
+                        <div class="size">
+                            <input type="radio" name="radio" id="eleven">
+                            <label role="radio" class="radio" for="eleven">11</label>
+                        </div>
+                        <div class="size">
+                            <input type="radio" name="radio" id="eleven-half">
+                            <label role="radio" class="radio" for="eleven-half">11.5</label>
+                        </div>
+                        <div class="size">
+                            <input type="radio" name="radio" id="twelve">
+                            <label role="radio" class="radio" for="twelve">12</label>
+                        </div>
+                        <div class="size">
+                            <input type="radio" name="radio" id="twelve-half">
+                            <label role="radio" class="radio" for="twelve-half">12.5</label>
+                        </div>
+                        <div class="size">
+                            <input type="radio" name="radio" id="thirteen">
+                            <label role="radio" class="radio" for="thirteen">13</label>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <h1 id="price">$79.99</h1>
-            <div id="item-actions">
-                <h1 id="wishlist">WISHLIST</h1>
-                <h1 id="cart">ADD TO CART</h1>
+                <div id="price-buttons">
+                    <h1 id="price">$79.99</h1>
+                    <div id="item-actions">
+                        <h1 id="wishlist">WISHLIST</h1>
+                        <h1 id="cart">ADD TO CART</h1>
+                    </div>
+                </div>
             </div>
         </main>
 
