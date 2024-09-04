@@ -1,3 +1,8 @@
+function enlargeImg(smallImg) {
+    let mainImg = document.getElementById('main-img');
+    mainImg.src = smallImg.src;
+}
+
 // KEEPS ALL BUTTONS UNCHECKED BY DEFAULT. EVEN WHEN PAGE REFRESHES
 document.getElementById('seven').checked = false;
 document.getElementById('seven-half').checked = false;
