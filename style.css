@@ -21,14 +21,28 @@ body {
 }
 
 nav {
+    height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-#logo {
-    margin-bottom: 5px;
-    margin-left: 5px;
+#searchbox {
+    width: 175px;
+    height: 25px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    padding-left: 5px;
+}
+
+#searchbox:focus {
+    outline: 0;
+}
+
+#personal-icons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
 }
 
 #main-wrapper {
