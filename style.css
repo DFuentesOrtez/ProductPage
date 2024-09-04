@@ -1,4 +1,153 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Open Sans", system-ui;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Nunito Sans", system-ui;
+    font-weight: 700;
+}
+
+
+#nav-wrapper {
+    background-color: rgb(255, 123, 0);
+    height: 56px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+#shoe-dir {
+    margin-top: 1em;
+    margin-left: 0.5em;
+}
+
+#shoe-dir a {
+    color: black;
+}
+
+#shoe-model {
+    margin-top: 1.5em;
+    margin-left: 0.5em;
+}
+
+#colorway {
+    font-size: 1.5em;
+}
+
+#shoe-images {
+    margin-top: 0.5em;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#image-previews {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#size-wrapper {
+    width: 360px;
+    margin: 0.7em auto 0em auto;
+}
+
+#size-prompt {
+    /* margin-left: 0.2em; */
+    display: flex;
+}
+
+#size-wrapper {
+    width: 350px;
+}
+
+#sizes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 350px;
+}
+
+.size {
+    width: 35px;
+    height: 35px;
+    background-color: hsl(0, 0%, 78%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="radio"] {
+    opacity: 0;
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    position: absolute;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked+label {
+    background-color: hsl(23, 73%, 51%);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio {
+    background-color: hsl(0, 0%, 78%);
+    color: black;
+}
+
+#price {
+    text-align: end;
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+}
+
+#item-actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.5em;
+    margin-bottom: 5em;
+    color: white;
+    text-align: center;
+    font-size: 0.5em;
+}
+
+#cart {
+    background-color: green;
+    border-radius: 15px;
+    padding: 1em;
+    width: 125px;
+    cursor: pointer;
+}
+
+#wishlist {
+    background-color: #2C3568;
+    border-radius: 15px;
+    padding: 1em;
+    width: 125px;
+    cursor: pointer;
 }
